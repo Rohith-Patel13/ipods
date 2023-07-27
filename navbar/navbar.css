@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.mainBgContainer {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.navBgContainer {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainBgImage {
+  background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png");
+  height: 100vh;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+.mainBgImageText {
+  color: white;
+  font-family: "Roboto";
+  padding: 1rem;
+}
+
+.linksContainer {
+  list-style: none;
+  display: none;
+}
+
+.linksContainerDynamicallyShow {
+  display: flex;
+  flex-direction: column;
+}
+
+.eachListContainer {
+  border-top: 1px solid #e7e5ea;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.showNavLinks {
+  display: none;
+}
+
+.linkItem {
+  color: gray;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+
+.buttonNav {
+  background-color: #ffdda9;
+  color: #594d6d;
+  padding: 8px 26px;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  font-weight: bold;
+}
+
+@media screen and (min-height: 768px) {
+  .mainBgImage {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png");
+  }
+
+  .showNavLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eachListContainer {
+    border-top: 0px solid #e7e5ea;
+    list-style: none;
+  }
+
+  .visibilityBar {
+    display: none;
+  }
+}
