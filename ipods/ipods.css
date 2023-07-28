@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0px;
+}
+
+.mainBgContainer {
+  background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/fairpods-darkpink-bg.png");
+  min-height: 100vh;
+  background-size: cover;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.budsImage {
+  width: 180px;
+  align-self: center;
+}
+
+.firstPara {
+  color: #8e62d9;
+  font-weight: bold;
+}
+
+.heading {
+  color: #ffffff;
+}
+
+.secondPara {
+  color: #ffffff;
+}
+
+.btnEl {
+  color: #334155;
+  background-color: #ffdda9;
+  padding: 12px 36px;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .mainBgContainer {
+    flex-direction: row;
+  }
+
+  .budsImage {
+    width: 300px;
+    order: 1;
+  }
+
+  .mainBgContainer {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/fairpods-blue-bg.png");
+  }
+}
